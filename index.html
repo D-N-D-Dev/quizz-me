@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="all.min.js"></script>
+    <title>Quiz Game</title>
+  </head>
+  <body>
+   <main>
+    <section id="game-sub-body">
+      <div class="screen" id="screen-container">
+        <div class="reset_container">
+          <a href="quiz.html">
+            <div class="home"><i class="fa fa-home"></i></div>
+          </a>
+          <div class="reset">reset</div>
+        </div>
+        <div id="main-screen">
+          <h2 class="question-text">
+            Welcome to the quiz game. select question to begin.
+          </h2>
+        </div>
+         <div class="congratulation">
+             <p></p>
+         </div>
+        <h3 id="btn-score">scores: <span class="btn-score"></span></h3>
+        <div class="result">
+          <span class="results"></span>
+        </div>
+      </div>
+
+      <div class="screen" id="answers-container">
+        <div id="answer">
+          <button type="button" id="btn-one" class="option option1">
+            home
+          </button>
+          <button type="button" id="btn-two" class="option option2">
+            office
+          </button>
+          <button type="button" id="btn-three" class="option option3">
+            school
+          </button>
+        </div>
+        <div class="button-container">
+            <span  class='button'id="play"> End </span>
+            <span  class='button'id="next"> next </span>
+            </div>
+      </div>
+      <aside>
+          <div class="end-game">
+             <div class="text-container">
+                <h1>game over!</h1>
+                 <div>your score: <span class="current">0/10</span> </div>
+             </div>
+             <div class="btn-container">
+             <a href="index.html" class="Quit-game">play again</a>
+            <a href="quiz.html" class="play-again">quit game</a>
+
+             </div>
+          </div>
+      </aside>
+    </section>
+      </main>
+    <script src="quiz.js"></script>
+  </body>
+</html>
